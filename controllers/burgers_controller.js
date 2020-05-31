@@ -18,7 +18,6 @@ router.get("/", function (req, res) {
       res.render("index");
     }
   });
-  res.send("page rendered");
 });
 
 router.post("/api/burgers", function (req, res) {
