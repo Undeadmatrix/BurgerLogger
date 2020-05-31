@@ -7,7 +7,7 @@ connection = mysql.createConnection({
     user: "root",
     password: "test123",
     database: "burgers_db",
-});
+  });
 
 connection.connect(function (err) {
   if (err) {
