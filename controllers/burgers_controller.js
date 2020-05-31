@@ -11,7 +11,7 @@ router.get("/", function (req, res) {
     console.log(burgerObj);
     res.render("index", burgerObj);
   }); */
-  console.log("page rendered");
+  res.send("page rendered");
 });
 
 router.post("/api/burgers", function (req, res) {
