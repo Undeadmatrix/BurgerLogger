@@ -1,0 +1,105 @@
+body {
+    color: #444444;
+    font-weight: 300;
+    background-color: orange;
+  }
+  
+  #introImg p {
+    margin-bottom: -20px;
+    margin-left: 30%;
+    text-align: center;
+  }
+  
+  #introText {
+    padding-top: 50px;
+    color: white;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+  }
+  
+  #introBurger {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+  }
+  
+  #text-imgHolder {
+    width: 85%;
+  }
+  
+  #welcome {
+    font-size: 30px;
+    font-weight: 300;
+    color: #015f6a;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #inputForm {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .form-group textarea {
+    width: 400px;
+  }
+  
+  #burgersAdded,
+  #burgersDevoured {
+    list-style-type: none;
+  }
+  
+  #burgerLog {
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  .burgersHeader {
+    text-align: center;
+    font-size: 25px;
+    color: #015f6a;
+    font-weight: 300;
+  }
+  
+  #burgersAdded li {
+    padding-top: 10px;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    #introBurger {
+      display: none;
+    }
+  
+    #introText {
+      padding-top: 50px;
+      color: white;
+      clear: both;
+      font-size: 60px;
+    }
+  
+    #mobileBurger {
+      width: 173px;
+      padding-top: 15px;
+    }
+  
+    #mobileBurgerHolder {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 751px) {
+    #mobileBurger {
+      width: 173px;
+      padding-top: 15px;
+    }
+  
+    #mobileBurgerHolder {
+      display: none;
+    }
+  }
