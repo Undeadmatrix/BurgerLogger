@@ -28,6 +28,7 @@
     <div class="row">
         <div class="col">
             <p class="burgersHeader">To Eat</p>
+            {{#if burger}}
             <ul id="burgersAdded">
                 {{#each burgers}}
                 {{#unless devoured}}
@@ -35,9 +36,11 @@
                 {{/unless}}
                 {{/each}}
             </ul>
+            {{/if}}
         </div>
         <div class="col">
             <p class="burgersHeader">Devoured</p>
+            {{#if burger}}
             <ul id="burgersDevoured" class="alert alert-secondary">
                 {{#each burgers}}
                 {{#if devoured}}
@@ -45,6 +48,7 @@
                 {{/if}}
                 {{/each}}
             </ul>
+            {{/if}}
         </div>
     </div>
 </div>
