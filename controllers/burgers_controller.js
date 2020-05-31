@@ -4,13 +4,20 @@ const burger = require("../models/burger.js");
 const router = express.Router();
 
 router.get("/", function (req, res) {
-  /* burger.all(function (data) {
+  burger.all(function (data) {
     var burgerObj = {
       burgers: data,
     };
     console.log(burgerObj);
-    res.render("index", burgerObj);
-  }); */
+    if(burgerObj)
+    {
+      res.render("index", burgerObj);
+    }
+    else
+    {
+      res.render("index");
+    }
+  });
   res.send("page rendered");
 });
 
